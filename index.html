@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Wait for the Magic</title>
+    <title>Salma's Magical Gift</title>
     <link rel="stylesheet" href="happy massege.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-pattern"></div>
     <div class="stars-overlay"></div>
 
-    <div class="container">
-        <h1 class="wait-title">Wait for the Surprise...Salma✨</h1>
-        
-        <div id="countdown">
-            <div class="time-unit">
-                <span id="days">00</span>
-                <p>Days</p>
+    <div class="container glass">
+        <div id="gift-section">
+            <h1 class="glass-title">Salma, I have a secret...</h1>
+            <div id="gift-box" onclick="revealSurprise()">
+                <div class="gift-emoji">🎁</div>
+                <div class="gift-ring"></div>
             </div>
-            <div class="time-unit">
-                <span id="hours">00</span>
-                <p>Hours</p>
-            </div>
-            <div class="time-unit">
-                <span id="minutes">00</span>
-                <p>Mins</p>
-            </div>
-            <div class="time-unit">
-                <span id="seconds">00</span>
-                <p>Secs</p>
-            </div>
+            <p class="tap-hint">Tap to unlock the magic</p>
         </div>
 
-        <div id="message" class="hidden">
-            <h2 class="ready-text">The Magic is Ready! 💖</h2>
-            <p class="refresh-hint">Refresh the page to unlock your gift!</p>
+        <div id="happy-message" class="hidden">
+            <div class="message-header">💖</div>
+            <h1 class="main-title">Happy Day, Bestie!</h1>
+            
+            <div class="glass-letter">
+                <p class="greeting">To my amazing friend, <strong>Salma Ahmed</strong>,</p>
+                <p class="message-body">
+                    You are truly one of a kind! I’m so happy to have you as my best friend, and I hope we stay inseparable forever.
+                </p>
+                
+                <div class="study-card glass">
+                    <h3>📚 Future Legend!</h3>
+                    <p>I know 3rd Prep can feel like a mountain, but you have the power to conquer it! Keep studying, stay curious, and believe in yourself as much as I believe in you.</p>
+                </div>
+            </div>
+
+            <button class="action-btn" onclick="location.reload()">Replay Magic ✨</button>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="happy massege.js"></script>
 </body>
 </html>
